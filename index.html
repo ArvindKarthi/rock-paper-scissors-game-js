@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <span>Rock</span>
+          <span>Paper</span>
+          <span>Scissors</span>
+        </h1>
+        <div class="score-container">
+          <h4>Score</h4>
+          <p id="score">0</p>
+        </div>
+      </header>
+      <main class="game">
+        <button class="btn-circle btn-paper btn-option" data-choice="paper">
+          <span class="wrapper">
+            <img src="./images/icon-paper.svg" alt="icon-paper" />
+          </span>
+        </button>
+        <button
+          class="btn-circle btn-scissors btn-option"
+          data-choice="scissors"
+        >
+          <span class="wrapper"
+            ><img src="./images/icon-scissors.svg" alt="icon-scissors"
+          /></span>
+        </button>
+        <button class="btn-circle btn-rock btn-option" data-choice="rock">
+          <span class="wrapper">
+            <img src="./images/icon-rock.svg" alt="icon-rock" />
+          </span>
+        </button>
+      </main>
+      <section class="game-on hide">
+        <div class="ply-box">
+          <h4>YOU PICKED</h4>
+          <button class="btn-circle btn-paper">
+            <span class="wrapper">
+              <img src="./images/icon-paper.svg" alt="paper" />
+            </span>
+          </button>
+        </div>
+
+        <div class="cpu-box hide">
+          <h4>THE HOUSE PICKED</h4>
+          <button class="btn-circle btn-paper">
+            <span class="wrapper">
+              <img src="./images/icon-paper.svg" alt="paper" />
+            </span>
+          </button>
+        </div>
+        <div class="placeholder">
+          <h4>THE HOUSE PICKED</h4>
+          <div class="placeholder-circle"></div>
+        </div>
+        <div class="result-board hide">
+          <h2 id="result-text">You won!</h2>
+          <button id="play-again">PLAY AGAIN</button>
+        </div>
+      </section>
+      <button class="btn-rules">Rules</button>
+    </div>
+  </body>
+</html>
